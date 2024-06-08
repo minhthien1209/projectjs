@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Game</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.2/dist/js/bootstrap.bundle.js">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.2/dist/css/bootstrap-reboot.min.css">
+</head>
+
+<body class="bg-color d-flex flex-row justify-content-between gap-3 p-3 mw-100 min-vh-100">
+    <nav
+        class="bg-box border border-dark box-shadow-white br-3 text-light py-4 px-3 w-20 d-flex flex-column justify-content-between vh-95">
+        <div class="d-flex flex-column">
+            <div onclick="" class="fs-icon-logo d-flex flex-row align-items-center gap-2" style="cursor: pointer;">
+                <i class="bi bi-controller"></i>
+                <p class="fw-bold m-0 poetsen-one-regular">PLAY</p>
+            </div>
+            <div class="pt-3 d-flex flex-column gap-1">
+                <div onclick=""
+                    class="nav-item border-dark rounded d-flex flex-row align-items-center py-2 px-3 gap-3 fs-cateory w-100">
+                    <i class="bi bi-house-fill"></i>
+                    <a class="none-link" href="./index.html">Bảng Thống Kê</a>
+                </div>
+                <div onclick=""
+                    class="nav-item border-dark rounded d-flex flex-row align-items-center py-2 px-3 gap-3 fs-cateory w-100">
+                    <i class="bi bi-joystick"></i>
+                    <a class="none-link" href="./dashboard.html">Quản Lý Trò Chơi</a>
+                </div>
+                <!-- <div onclick=""
+                    class="nav-item border-dark rounded d-flex flex-row align-items-center py-2 px-3 gap-3 fs-cateory w-100">
+                    <i class="bi bi-heart-fill"></i>
+                    <a class="none-link" href="./favorites.html">Quản Lý Tài Khoảng</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="brand d-flex flex-row gap-3 justify-content-center align-items-center">
+            <div class="brand-item fs-6 d-flex justify-content-center align-items-center">
+                <i class="bi bi-twitter-x"></i>
+            </div>
+            <div class="brand-item fs-5 d-flex justify-content-center align-items-center">
+                <i class="bi bi-meta"></i>
+            </div>
+            <div class="brand-item fs-5 d-flex justify-content-center align-items-center">
+                <i class="bi bi-youtube"></i>
+            </div>
+            <div class="brand-item fs-6 d-flex justify-content-center align-items-center bg-primary">
+                <i class="bi bi-share-fill"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-box border border-dark box-shadow-white br-3 text-light py-2 px-3 w-78 d-flex flex-column gap-3">
+        <div class="heaven">
+            <div class="navbar d-flex flex-row align-items-center">
+                <div>
+                    <i class="bi bi-sliders fs-5"></i>
+                </div>
+                <div onclick="" class="d-flex flex-row gap-3">
+                    <a href="./favorites.html" class="box-shadow-white w-32 rounded d-flex align-items-center item-user none-link">
+                        <i class="bi bi-heart-fill fs-6"></i>
+                        <div id="countHeart" class="count-item bg-primary fs-8">0</div>
+                    </a>
+                    <a href="./cart.html" class="box-shadow-white w-32 rounded d-flex align-items-center item-user none-link">
+                        <i class="bi bi-bag-fill fs-6"></i>
+                        <div class="count-item bg-primary fs-8">0</div>
+                    </a>
+                    <a href="" class="box-shadow-white rounded user px-3 none-link">
+                        <img class="image" src="../images/placeholder.jpg" alt="">
+                        <div class="profile">
+                            <div class="fs-7">User Name</div>
+                            <div class="fs-7">View Profile</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- <div id="viewCard" class="d-flex flex-row justify-content-center align-items-center"></div> -->
+        </div>
+        <div class="under pb-3">
+            <div class="listGame row pt-2 px-3 gap-4">
+                <div class="d-flex flex-column">
+                    <div id="cart" class="cart">
+                        <p class="heading fs-5 fw-bolder">Sửa Trò Chơi</p>
+                        <form action="/submit-game-details" method="post" enctype="multipart/form-data"
+                                class="d-flex flex-column justify-content-center align-items-start gap-3 form-game">
+                            <div class="d-flex flex-row pt-3">
+                                <label for="gameName" class="me-6">Tên Game</label>
+                                <input class="form-input py-2 px-3" placeholder="Nhập" type="text" id="gameName" name="gameName" required>
+                            </div>
+                            <div class="d-flex flex-row pt-3">
+                                <label for="subtitle" class="me-6">Phụ đề</label>
+                                <input class="form-input py-2 px-3" placeholder="Nhập" type="text" id="subtitle" name="subtitle">
+                            </div>
+                            <div class="d-flex flex-row pt-3">
+                                <label for="genre" class="me-6">Thể loại</label>
+                                <select id="genre" name="genre" required>
+                                    <option value="">Chọn thể loại</option>
+                                    <option value="action">Action</option>
+                                    <option value="adventure">Adventure</option>
+                                    <option value="rpg">RPG</option>
+                                    <option value="strategy">Strategy</option>
+                                    <option value="sports">Sports</option>
+                                </select>
+                            </div>
+                            <div class="d-flex flex-row pt-3">
+                                <label for="description" class="me-6">Mô tả</label>
+                                <textarea id="description" class="form-input py-2 px-3" placeholder="Nhập" name="description" rows="4" required></textarea>
+                            </div>
+                            <div class="d-flex flex-row pt-3">
+                                <label for="image" class="me-6">Thêm ảnh</label>
+                                <input type="file" id="image" name="image" accept="image/*" required>
+                            </div>
+                            <div class="d-flex flex-row pt-3">
+                                <label for="discountPrice" class="me-6">Giá giảm</label>
+                                <input class="form-input py-2 px-3" placeholder="Nhập" type="number" id="discountPrice" name="discountPrice" step="0.01" required>
+                            </div>
+                            <div class="d-flex flex-row pt-3">
+                                <label for="price" class="me-6">Giá tiền</label>
+                                <input class="form-input py-2 px-3" placeholder="Nhập" type="number" id="price" name="price" step="0.01" required>
+                            </div>
+                            <div class="d-flex flex-row pt-3">
+                                <label for="stars" class="me-6">Số sao</label>
+                                <input class="form-input py-2 px-3" placeholder="Nhập" type="number" id="stars" name="stars" step="0.1" min="0" max="5" required>
+                            </div>
+                            <button type="submit" class="mt-3 button-submit text-light py-2 px-3">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="./js/page.js"></script> -->
+</body>
+
+
+</html>

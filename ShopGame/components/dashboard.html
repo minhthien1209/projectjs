@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Game</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.2/dist/js/bootstrap.bundle.js">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.2/dist/css/bootstrap-reboot.min.css">
+</head>
+
+<body class="bg-color d-flex flex-row justify-content-between gap-3 p-3 mw-100 min-vh-100">
+    <nav
+        class="bg-box border border-dark box-shadow-white br-3 text-light py-4 px-3 w-20 d-flex flex-column justify-content-between vh-95">
+        <div class="d-flex flex-column">
+            <a href="./index.html" class="fs-icon-logo d-flex flex-row align-items-center gap-2 none-link"
+                style="cursor: pointer;">
+                <i class="bi bi-controller"></i>
+                <p class="fw-bold m-0 poetsen-one-regular">PLAY</p>
+            </a>
+            <div class="pt-3 d-flex flex-column gap-1">
+                <div onclick=""
+                    class="nav-item border-dark rounded d-flex flex-row align-items-center py-2 px-3 gap-3 fs-cateory w-100">
+                    <i class="bi bi-house-fill"></i>
+                    <a class="none-link" href="./index.html">Bảng Thống Kê</a>
+                </div>
+                <div onclick=""
+                    class="nav-item border-dark rounded d-flex flex-row align-items-center py-2 px-3 gap-3 fs-cateory w-100">
+                    <i class="bi bi-joystick"></i>
+                    <a class="none-link" href="./dashboard.html">Quản Lý Trò Chơi</a>
+                </div>
+                <!-- <div onclick=""
+                    class="nav-item border-dark rounded d-flex flex-row align-items-center py-2 px-3 gap-3 fs-cateory w-100">
+                    <i class="bi bi-heart-fill"></i>
+                    <a class="none-link" href="./favorites.html">Quản Lý Tài Khoảng</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="brand d-flex flex-row gap-3 justify-content-center align-items-center">
+            <div class="brand-item fs-6 d-flex justify-content-center align-items-center">
+                <i class="bi bi-twitter-x"></i>
+            </div>
+            <div class="brand-item fs-5 d-flex justify-content-center align-items-center">
+                <i class="bi bi-meta"></i>
+            </div>
+            <div class="brand-item fs-5 d-flex justify-content-center align-items-center">
+                <i class="bi bi-youtube"></i>
+            </div>
+            <div class="brand-item fs-6 d-flex justify-content-center align-items-center bg-primary">
+                <i class="bi bi-share-fill"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-box border border-dark box-shadow-white br-3 text-light py-2 px-3 w-78 d-flex flex-column gap-3">
+        <div class="heaven">
+            <div class="navbar d-flex flex-row align-items-center">
+                <div>
+                    <i class="bi bi-sliders fs-5"></i>
+                </div>
+                <div onclick="" class="d-flex flex-row gap-3">
+                    <a href="./favorites.html"
+                        class="box-shadow-white w-32 rounded d-flex align-items-center item-user none-link">
+                        <i class="bi bi-heart-fill fs-6"></i>
+                        <div id="countHeart" class="count-item bg-primary fs-8">0</div>
+                    </a>
+                    <a href="./cart.html"
+                        class="box-shadow-white w-32 rounded d-flex align-items-center item-user none-link">
+                        <i class="bi bi-bag-fill fs-6"></i>
+                        <div class="count-item bg-primary fs-8">0</div>
+                    </a>
+                    <div class="box-shadow-white rounded user px-3 none-link position-relative" id="userProfile">
+                        <img class="image" src="../images/placeholder.jpg" alt="">
+                        <div class="profile">
+                            <a href="./login.html" id="name" class="fs-7 none-link">Đăng nhập</a>
+                            <div class="fs-7">View Profile</div>
+                        </div>
+                        <div id="dropdown" class="dropdown-content">
+                            <a href="#" id="logout">Log-out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="viewCard" class="d-flex flex-row justify-content-center align-items-center"></div> -->
+        </div>
+        <div class="under pb-3">
+            <div class="controlleGame row pt-2 px-3 gap-4">
+                <div class="d-flex flex-column">
+                    <div id="cart" class="cart">
+                        <p class="heading fs-5 fw-bolder">Quản Lý Trò Chơi</p>
+                        <a href="./addGame.html" class="none-link"><i class="bi bi-plus-circle-fill fs-3"></i></a>
+                        <div class="row-cart">
+                            <p></p>
+                            <p class="ps-7">Tên</p>
+                            <p class="pe-4">Thể Loại</p>
+                            <p class="pe-6">Giá</p>
+                            <p></p>
+                        </div>
+                        <div class="row-cart cart-item mt-3">
+                            <img class="image" src="../images/image1.png" alt="">
+                            <p class="fw-bolder">Mario</p>
+                            <p class="fw-bolder">Phiêu Lưu</p>
+                            <p class="fw-bolder">$70.00</p>
+                            <div class="icons d-flex flex-row gap-3">
+                                <a href="./changeGame.html" class="none-link"><i
+                                        class="bi bi-gear-fill text-gold fs-4"></i></a>
+                                <i class="bi bi-dash-circle-fill text-rose fs-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./js/page.js"></script>
+    <script>
+        document.getElementById('userProfile').addEventListener('click', function () {
+            document.getElementById('dropdown').classList.toggle('show');
+        });
+
+        // Đăng xuất
+        document.getElementById('logout').addEventListener('click', function () {
+            localStorage.removeItem('accountLogin'); // Xóa thông tin đăng nhập
+            window.location.href = './login.html'; // Điều hướng về trang đăng nhập
+        });
+
+        // Đóng dropdown khi nhấp ra ngoài
+        window.onclick = function (event) {
+            if (!event.target.matches('.user, .user *')) {
+                var dropdowns = document.getElementsByClassName('dropdown-content');
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+
+</html>
