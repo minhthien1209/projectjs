@@ -1,0 +1,53 @@
+[
+    {
+      "name": "Asphalt 9: Legends",
+  "subtitle": "Game đua xe tốc độ cao, cạnh tranh với những tay đua khác trên những đoạn đường quanh co để về đích sớm nhất",
+  "type": ["Racing", "Role-playing"],
+  "description": "Asphalt 9: Legends là một tựa game hay",
+  "imageSrc": "https://cdn.tgdd.vn/GameApp/3/219926/Screentshots/asphalt-9-legends-huyen-thoai-tro-lai-01-06-2021-1.png",
+  "discount": "50",
+  "price": "70",
+  "star": "3"
+    },
+    {
+      "name": "Call of Duty: Mobile",
+      "subtitle": "Game bắn súng góc nhìn thứ nhất với đồ họa đỉnh cao và chế độ chơi đa dạng",
+      "type": ["Shooter", "Action"],
+      "description": "Call of Duty: Mobile mang lại trải nghiệm bắn súng hấp dẫn trên điện thoại di động",
+      "imageSrc": "https://cdn.tgdd.vn/GameApp/3/219926/Screentshots/call-of-duty-mobile-01-06-2021-1.png",
+      "discount": 30,
+      "price": 60,
+      "star": 4
+    },
+    {
+      "name": "Genshin Impact",
+      "subtitle": "Game nhập vai hành động với thế giới mở tuyệt đẹp và cốt truyện phong phú",
+      "type": ["RPG", "Adventure"],
+      "description": "Genshin Impact là một tựa game hay với đồ họa đẹp mắt và lối chơi cuốn hút",
+      "imageSrc": "https://cdn.tgdd.vn/GameApp/3/219926/Screentshots/genshin-impact-01-06-2021-1.png",
+      "discount": 20,
+      "price": 50,
+      "star": 5
+    },
+    {
+      "name": "Among Us",
+      "subtitle": "Game chiến thuật nhiều người chơi, nơi bạn phải tìm ra kẻ mạo danh trong đội của mình",
+      "type": ["Strategy", "Party"],
+      "description": "Among Us là một game vui nhộn và đầy kịch tính khi bạn cố gắng tìm ra kẻ mạo danh",
+      "imageSrc": "https://cdn.tgdd.vn/GameApp/3/219926/Screentshots/among-us-01-06-2021-1.png",
+      "discount": 40,
+      "price": 10,
+      "star": 4
+    },
+    {
+      "name": "Clash Royale",
+      "subtitle": "Game chiến thuật thời gian thực với những trận đấu hấp dẫn và chiến thuật sâu sắc",
+      "type": ["Strategy", "Card"],
+      "description": "Clash Royale là một tựa game chiến thuật thời gian thực với lối chơi đa dạng và cạnh tranh cao",
+      "imageSrc": "https://cdn.tgdd.vn/GameApp/3/219926/Screentshots/clash-royale-01-06-2021-1.png",
+      "discount": 25,
+      "price": 30,
+      "star": 4
+    }
+]
+  
